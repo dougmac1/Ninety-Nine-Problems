@@ -20,4 +20,10 @@ class CollectionProblems {
     list.reverse
   }
 
+  def palindrome(list : List[Int]) : Boolean = {
+    list == list.reverse
+  }
+
+
+
 }

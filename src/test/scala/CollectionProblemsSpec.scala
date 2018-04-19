@@ -26,6 +26,14 @@ class CollectionProblemsSpec extends WordSpec with MustMatchers {
     "return a reversed list when given a list of 1,1,2,3,5,8" in {
       TDD.reversed(List(1,1,2,3,5,8)) mustEqual List(8,5,3,2,1,1)
     }
+
+    "return true when give a list of 1,2,3,2,1 as this is a palindrome" in {
+      TDD.palindrome(List(1,2,3,2,1)) mustEqual true
+    }
+
+    "return false when given a list of 1,2,3,4,2,1 as this is not a palindrome" in {
+      TDD.palindrome(List(1,2,3,4,2,1)) mustEqual false
+    }
   }
 
 }
