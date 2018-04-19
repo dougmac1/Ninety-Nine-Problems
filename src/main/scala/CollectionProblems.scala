@@ -29,21 +29,11 @@ class CollectionProblems {
     case e => List(e)
   }
 
-  def removeDuplicates(list: List[String]) : List[String] = list match {
+  def removeDuplicates(list: List[String]): List[String] = list match {
     case Nil => Nil
     case h :: tail => h :: removeDuplicates(tail.dropWhile(_ == h))
   }
-
-  def sublists(list: List[String]) : List[List[String]] = {
-    if (list.isEmpty) List(List())
-    else {
-      val (packed, next) = list span {
-        _ == list.head
-      }
-      if (next == Nil) List(packed)
-      else packed :: sublists(next)
-    }
-  }
 }
+
 
 
