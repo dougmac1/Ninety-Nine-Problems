@@ -8,4 +8,8 @@ class CollectionProblems {
     list.init.last
   }
 
+  def nthNumber(number : Int, list : List[Int]) : Any = {
+    if (number >= 0) list(number)
+  }
+
 }
