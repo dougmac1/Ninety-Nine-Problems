@@ -12,4 +12,8 @@ class CollectionProblems {
     if (number >= 0) list(number)
   }
 
+  def listSize(list : List[Int]) : Int = {
+    list.length
+  }
+
 }
