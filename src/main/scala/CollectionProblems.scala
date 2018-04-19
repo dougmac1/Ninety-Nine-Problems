@@ -16,4 +16,8 @@ class CollectionProblems {
     list.length
   }
 
+  def reversed(list : List[Int]) : List[Int] = {
+    list.reverse
+  }
+
 }

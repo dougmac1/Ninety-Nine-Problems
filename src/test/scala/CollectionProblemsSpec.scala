@@ -23,7 +23,9 @@ class CollectionProblemsSpec extends WordSpec with MustMatchers {
       TDD.listSize(List(1,1,2,3,5,8)) mustEqual 6
     }
 
-    
+    "return a reversed list when given a list of 1,1,2,3,5,8" in {
+      TDD.reversed(List(1,1,2,3,5,8)) mustEqual List(8,5,3,2,1,1)
+    }
   }
 
 }
