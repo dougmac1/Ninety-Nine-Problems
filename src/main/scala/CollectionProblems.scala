@@ -29,6 +29,10 @@ class CollectionProblems {
     case e => List(e)
   }
 
+  def removeDuplicates(list: List[String]) : List[String] = list match {
+    case Nil => Nil
+    case h :: tail => h :: removeDuplicates(tail.dropWhile(_ == h))
+  }
 
 }
 
