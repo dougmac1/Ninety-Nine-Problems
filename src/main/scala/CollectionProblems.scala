@@ -1,7 +1,11 @@
 class CollectionProblems {
 
-  def lastElement(lastNumber : List[Int]) : Int = {
-    lastNumber.last
+  def lastElement(list : List[Int]) : Int = {
+    list.last
+  }
+
+  def penultimate(list : List[Int]) : Int = {
+    list.init.last
   }
 
 }
